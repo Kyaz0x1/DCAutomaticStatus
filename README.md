@@ -7,6 +7,7 @@ Update discord status several times automatically with configurable time.
 ### Config
 <img src="img/DCAutomaticStatus - Config.png" />
 
+> 😀 Website with emojis: https://getemoji.com/
 
 ### Project information
 |Name| DCAutomaticStatus |
