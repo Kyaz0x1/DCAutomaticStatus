@@ -31,6 +31,8 @@ public class ButtonStartClickEvent implements ActionListener {
             JOptionPane.showMessageDialog(null, "Informe o token!", "DCAutomaticStatus", JOptionPane.ERROR_MESSAGE);
             return;
         }
+        
+        AuthCredentials.TOKEN = token;
 
         if(!isToken(token) && !api.isValidAccount(AuthCredentials.TOKEN)){
             JOptionPane.showMessageDialog(null, "O token informado é inválido!", "DCAutomaticStatus", JOptionPane.ERROR_MESSAGE);
@@ -41,8 +43,7 @@ public class ButtonStartClickEvent implements ActionListener {
             JOptionPane.showMessageDialog(null, "Não há nenhum status para iniciar! Adicione um status nas configurações do programa.", "DCAutomaticStatus", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
-        AuthCredentials.TOKEN = token;
+        
         manager.start();
 
         JOptionPane.showMessageDialog(null, "Status automático iniciado com sucesso!");
