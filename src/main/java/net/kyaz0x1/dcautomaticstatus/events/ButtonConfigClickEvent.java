@@ -1,5 +1,4 @@
 package net.kyaz0x1.dcautomaticstatus.events;
-;
 import net.kyaz0x1.dcautomaticstatus.view.StatusConfigView;
 
 import javax.swing.SwingUtilities;
